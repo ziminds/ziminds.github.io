@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Building a Personal Blog Using Hexo+Github Pages for Free</title>
-    <url>/2020/08/04/1st-attempt/</url>
+    <url>/2020/08/04/Building%20a%20Personal%20Blog%20Using%20Hexo+Github%20Pages%20for%20Free/</url>
     <content><![CDATA[<h2 id="installation">Installation</h2>
 <p>Make sure the following items are already installed.</p>
 <ul>
@@ -25,7 +25,7 @@
 <p>To list all the installed package dependencies:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm ls --depth 0</span><br><span class="line">hexo-site@0.0.0 /ziminds</span><br><span class="line">├── hexo@5.0.0</span><br><span class="line">├── hexo-auto-excerpt@1.1.2</span><br><span class="line">├── hexo-deployer-git@2.1.0</span><br><span class="line">├── hexo-filter-emoji@2.2.1</span><br><span class="line">├── hexo-generator-archive@1.0.0</span><br><span class="line">├── hexo-generator-category@1.0.0</span><br><span class="line">├── hexo-generator-index@1.0.0</span><br><span class="line">├── hexo-generator-searchdb@1.3.2</span><br><span class="line">├── hexo-generator-tag@1.0.0</span><br><span class="line">├── hexo-inject@1.0.0</span><br><span class="line">├── hexo-math@3.0.4</span><br><span class="line">├── hexo-renderer-ejs@1.0.0</span><br><span class="line">├── hexo-renderer-pandoc@0.3.0</span><br><span class="line">├── hexo-renderer-stylus@1.1.0</span><br><span class="line">└── hexo-server@1.0.0</span><br></pre></td></tr></table></figure>
 <h2 id="deployment">Deployment</h2>
-<p>Add deployment configuration in the <code>_config.yml</code> file. This file can be found in <code>&lt;your_blog_site&gt;/_config.yml</code>.</p>
+<p>Add deployment configuration in the site's <code>_config.yml</code> file.</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 <p>Make sure that you have your git setup already configured.Replace <code>"username"</code> and <code>youremail.example.com</code> with your own ones.</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;username&quot;</span></span><br><span class="line">$ git config --global user.email youremail@example.com</span><br></pre></td></tr></table></figure>
@@ -34,7 +34,7 @@
 <h2 id="syncing-the-sorce-code-on-github">Syncing the sorce code on Github</h2>
 <h3 id="upload-the-source-code-to-github">Upload the source code to Github</h3>
 <ol type="1">
-<li><p>Create a new repo on github, copy the SSH, it should be something like: <code>https://github.com/username/srouce_code.git</code></p></li>
+<li><p>Create a new repo on github &amp; copy the SSH: <code>https://github.com/username/srouce_code.git</code></p></li>
 <li><p>Initialization</p></li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
@@ -86,33 +86,5 @@
       <tags>
         <tag>Hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/08/05/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<p><span class="math display">\[\begin{equation} \label{eq2}
-\begin{aligned}
-a &amp;= b + c \\
-  &amp;= d + e + f + g \\
-  &amp;= h + i
-\end{aligned}
-\end{equation}\]</span></p>
-<h2 id="quick-start">Quick Start</h2>
-<h3 id="create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">df = read_csv(<span class="string">&quot;X&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><span class="math inline">\(x = a + b\)</span></p>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
 </search>
