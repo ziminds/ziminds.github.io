@@ -413,7 +413,7 @@ pre {
 }
 pre,
 code {
-  font-family: 'Ubuntu Mono', consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
+  font-family: 'Fira Code', consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
 }
 code {
   background: #eee;
@@ -1190,7 +1190,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #98ffcf;
+  background: #ffc2d2;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
